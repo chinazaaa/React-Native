@@ -38,6 +38,7 @@ const stackProps: any= { //options we want to associate with our Navigation Stac
       fontWeight: 'bold',
       paddingTop: 60
     },
+   
     headerRight: () => (
       <Image style={styles.logo}
           source={require('./src/img/PAU-Logo-Website.png')}
@@ -46,7 +47,7 @@ const stackProps: any= { //options we want to associate with our Navigation Stac
     headerTitleAlign: 'left',
     headerRightContainerStyle:{//there is also headerLeftContainerStyle if we want to use it
       paddingBottom: 33
-    }
+    },
   }
 }
 //Prepare the App Stack with the Screens

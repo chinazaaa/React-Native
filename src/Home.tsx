@@ -17,18 +17,18 @@ type Props = {
 const Home: React.FC<Props> = (props) => {
   return(
     <SafeAreaView style={styles.container}>
-        <Button title="Go to Component1"
+        <Button title="Go to Component1" color='purple'
           onPress={()=> props.navigation.navigate('Component1Screen',{
             demoParam: 'This is a route demo parameter'//notice here that you can pass parameters to any navigate route
           }
           )}/>
-        <Button title="Go to Component2"
+        <Button title="Go to Component2" color='purple'
           onPress={()=> props.navigation.navigate('Component2Screen')}/>
-          <Button title="Go to Component3"
+          <Button title="Go to Component3" color='purple'
           onPress={()=> props.navigation.navigate('Component3Screen')}/>
-        <Button title="Go to Component4" 
+        <Button title="Go to Component4"  color='purple'
           onPress={()=> props.navigation.navigate('Component4Screen')}/>
-        <Button title="Go to Component5"
+        <Button title="Go to Component5" color='purple'
           onPress={()=> props.navigation.navigate('Component5Screen')}/>
        
     </SafeAreaView>
@@ -37,7 +37,7 @@ const Home: React.FC<Props> = (props) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'lightblue',
+      backgroundColor: 'grey',
       alignItems: 'stretch',
       justifyContent: 'center',
       fontSize: 18
@@ -46,7 +46,11 @@ const styles = StyleSheet.create({
       width: 133,
       height: 55,
       paddingBottom: 50
+  },
+  buttonColor:{
+    color: 'green'
   }
+  
 });
 
 export default Home;

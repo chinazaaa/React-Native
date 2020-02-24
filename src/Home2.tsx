@@ -19,13 +19,13 @@ const Home: React.FC<Props> = (props) => {
     <SafeAreaView style={styles.container}>
         
 
-        <Button title="Go to Component6"
+        <Button title="Go to Component6" color='pink'
           onPress={()=> props.navigation.navigate('Component6Screen')}/>
-        <Button title="Go to Component7"
+        <Button title="Go to Component7" color='pink'
           onPress={()=> props.navigation.navigate('Component7Screen')}/>
-        <Button title="Go to Component8"
+        <Button title="Go to Component8" color='pink'
           onPress={()=> props.navigation.navigate('Component8Screen')}/>
-        <Button title="Go to Component9"
+        <Button title="Go to Component9" color='pink'
           onPress={()=> props.navigation.navigate('Component9Screen')}/>
     </SafeAreaView>
   )
@@ -33,7 +33,7 @@ const Home: React.FC<Props> = (props) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'yellow',
+      backgroundColor: 'red',
       alignItems: 'stretch',
       justifyContent: 'center',
       fontSize: 18
